@@ -9,9 +9,9 @@
     "start:prod": "npm run build && node server.js",
     "start:dev": "concurrently \"npm run server\" \"cd client && npm run start\"",
     "server": "nodemon server.js --ignore client",
-    "build": "cd client && npm run build",
-    "install": "cd client && npm install",
-    "client": "cd client && npm start",
+    "build": "npm run build",
+    "install": "npm install",
+    "client": "npm start",
     "lite-server": "lite-server"
   },
   "repository": {
@@ -25,12 +25,19 @@
   },
   "homepage": "https://github.com/coding-boot-camp/unit18hw#readme",
   "dependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/preset-env": "^7.13.15",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
     "compression": "^1.7.4",
     "concurrently": "^6.0.2",
     "express": "^4.17.1",
     "lite-server": "^2.5.3",
     "mongoose": "^5.5.15",
     "morgan": "^1.9.1",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "webpack": "^5.35.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-pwa-manifest": "^4.3.0"
   }
 }
