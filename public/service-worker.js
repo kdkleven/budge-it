@@ -4,7 +4,15 @@ const FILES_TO_CACHE = [
   "/",
   "/favicon",
   "/index.html",
-  "/style"
+  "/style",
+  "/dist/auto/images/icons/icon_512x512.png",
+  "/dist/auto/images/icons/icon_384x384.png",
+  "/dist/auto/images/icons/icon_256x256.png",
+  "/dist/auto/images/icons/icon_192x192.png",
+  "/dist/auto/images/icons/icon_128x128.png",
+  "/dist/auto/images/icons/icon_96x96.png",
+  "/dist/bundle.js",
+  "/dist/manifest.json"
 ];
 
 self.addEventListener("install", function (evt) {
