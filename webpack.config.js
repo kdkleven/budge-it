@@ -10,12 +10,17 @@ const config = {
   mode: "development",
   plugins: [
     new WebpackPwaManifest({
+      filename: "manifest.json",
+      inject: false,
+      fingerprints: false,
       name: "Budge-it Tracker App",
       short_name: "Budge-it App",
       description: "The best bang for the buck budget tracker application.",
       background_color: "#01579b",
       theme_color: "#ffffff",
       start_url: "/",
+      display: "standalone",
+      
       icons: [
         {
           src: path.resolve("public/icons/icon-192x192.png"),
