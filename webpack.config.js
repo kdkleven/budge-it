@@ -2,12 +2,12 @@ const WebpackPwaManifest = require("webpack-pwa-manifest");
 const path = require("path");
 
 const config = {
+  mode: "development",
   entry: "./public/index.js",
   output: {
     path: __dirname + "/public/dist",
     filename: "bundle.js"
   },
-  mode: "development",
   plugins: [
     new WebpackPwaManifest({
       filename: "manifest.json",
@@ -20,12 +20,11 @@ const config = {
       theme_color: "#ffffff",
       start_url: "/",
       display: "standalone",
-      
       icons: [
         {
           src: path.resolve("public/icons/icon-192x192.png"),
           sizes: [96, 128, 192, 256, 384, 512],
-          destination: path.join("assets", "icons")
+          destination: path.join("images","icons")
         }
       ]
     })
