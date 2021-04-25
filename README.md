@@ -1,10 +1,8 @@
 
 # Budge-it
 
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
     
-
 ## Description
 
 Budget tracker is a progressive web application that allows you to record transactions while online using MongoDB or offline using indexedDB. Transaction data recorded offline will sync with the online database as soon as a network connection is re-established.
@@ -25,6 +23,8 @@ Navigate to https://kk-budge-it.herokuapp.com/
 
 Enter the name of a transaction, and amount, and whether the transaction was an addition or subtraction from your account. If the network connection is lost while using the application, don't worry, continue using the app and record your transactions. When a network connection is establishd, the data will sync with the online database.
 
+## Screenshot
+<img src="./18-PWA/04-important/assets/images-readme/screenshot.png" width=500>
 
 ## License
   
