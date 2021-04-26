@@ -1,11 +1,15 @@
+// Generated using webpack-cli http://github.com/webpack-cli
+const path = require('path');
 const WebpackPwaManifest = require("webpack-pwa-manifest");
-const path = require("path");
 
-const config = {
-  mode: "development",
-  entry: "./public/index.js",
+module.exports = {
+  mode: 'development',
+  entry: './public/index.js',
+  resolve: {
+    extensions: ['.webpack.js', '.web.js', '.ts', '.js']
+  },
   output: {
-    path: __dirname + "/public/dist",
+    path: path.resolve(__dirname, 'dist'),
     filename: "bundle.js"
   },
   plugins: [
@@ -24,11 +28,30 @@ const config = {
         {
           src: path.resolve("public/icons/icon-192x192.png"),
           sizes: [96, 128, 192, 256, 384, 512],
-          destination: path.join("images","icons")
+          destination: path.join("images", "icons")
         }
       ]
-    })
-  ]
-};
+    }),
+    // Add your plugins here
+    // Learn more obout plugins from https://webpack.js.org/configuration/plugins/
+  ],
+  module: {
+    rules: [
+      {
+        test: /\\.(js|jsx)$/,
+        loader: 'babel-loader'
+      },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/,
+        type: 'asset',
+      },
 
-module.exports = config;
+      // Add your rules for custom modules here
+      // Learn more about loaders from https://webpack.js.org/loaders/
+    ],
+  },
+};
