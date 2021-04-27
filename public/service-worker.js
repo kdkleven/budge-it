@@ -8,14 +8,14 @@ const FILES_TO_CACHE = [
   "/index.js",
   "/db.js",
   "/styles.css",
-  "/dist/bundle.js",
+  "/dist/main.bundle.js",
   "/dist/manifest.json",
-  "/dist/icons/icon_512x512.png",
-  "/dist/icons/icon_384x384.png",
-  "/dist/icons/icon_256x256.png",
-  "/dist/icons/icon_192x192.png",
-  "/dist/icons/icon_128x128.png",
-  "/dist/icons/icon_96x96.png",
+  "/icon_512x512.png",
+  "/icon_384x384.png",
+  "/icon_256x256.png",
+  "/icon_192x192.png",
+  "/icon_128x128.png",
+  "/icon_96x96.png",
 ];
 
 self.addEventListener("install", event => {
