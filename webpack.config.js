@@ -22,9 +22,9 @@ const config = {
       display: "standalone",
       icons: [
         {
-          src: path.resolve("public/icons/icon-192x192.png"),
+          src: path.resolve("public/icons/icon_192x192.png"),
           sizes: [96, 128, 192, 256, 384, 512],
-          destination: path.join("images","icons")
+          destination: path.join("icons")
         }
       ]
     })
