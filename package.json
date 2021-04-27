@@ -1,27 +1,36 @@
 {
-    "name": "budge-it",
-    "version": "1.0.0",
-    "description": "Budge-it tracker app",
-    "main": "index.js",
-    "scripts": {
-        "prestart": "webpack",
-        "build": "webpack",
-        "seed": "node seeders/seed.js"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "express": "^4.16.4",
-        "mongoose": "^5.5.8"
-    },
-    "devDependencies": {
-        "@babel/core": "^7.13.16",
-        "@babel/preset-env": "^7.13.15",
-        "@webpack-cli/generators": "^2.0.0",
-        "babel-core": "^6.26.3",
-        "babel-loader": "^8.2.2",
-        "webpack": "^5.35.1",
-        "webpack-cli": "^4.6.0",
-        "webpack-pwa-manifest": "^4.0.0"
-    }
+  "name": "budget-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "webpack": "webpack",
+    "seed": "node seeders/seed.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "lite-server": "lite-server",
+    "prestart": "npm run webpack",
+    "build": "webpack --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "lite-server": "^2.5.3",
+    "mongoose": "^5.5.15",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/preset-env": "^7.13.15",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.3.1",
+    "webpack": "^5.35.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-pwa-manifest": "^4.3.0"
+  }
 }

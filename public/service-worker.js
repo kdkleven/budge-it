@@ -3,19 +3,19 @@ const DATA_CACHE_NAME = "data-cache-v1";
 const RUNTIME_CACHE = "runtime-cache";
 const FILES_TO_CACHE = [
   "/",
-  // "/favicon.ico",
-  // "/index.html",
-  // "/index.js",
-  // "/db.js",
-  // "/style.css",
-  // "/dist/bundle.js",
-  // "/dist/manifest.json",
-  // "/dist/images/icons/icon_512x512.png",
-  // "/dist/images/icons/icon_384x384.png",
-  // "/dist/images/icons/icon_256x256.png",
-  // "/dist/images/icons/icon_192x192.png",
-  // "/dist/images/icons/icon_128x128.png",
-  // "/dist/images/icons/icon_96x96.png",
+  "/favicon.ico",
+  "/index.html",
+  "/index.js",
+  "/db.js",
+  "/style.css",
+  "/bundle.js",
+  "/manifest.json",
+  "/images/icons/icon_512x512.png",
+  "/images/icons/icon_384x384.png",
+  "/images/icons/icon_256x256.png",
+  "/images/icons/icon_192x192.png",
+  "/images/icons/icon_128x128.png",
+  "/images/icons/icon_96x96.png",
 ];
 
 self.addEventListener("install", event => {
