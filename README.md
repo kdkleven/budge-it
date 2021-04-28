@@ -5,7 +5,7 @@
     
 ## Description
 
-Budget tracker is a progressive web application that allows you to record transactions while online using MongoDB or offline using indexedDB. Transaction data recorded offline will sync with the online database as soon as a network connection is re-established.
+Budge-it tracker is a progressive web application that allows you to record transactions while online using MongoDB or offline using indexedDB. Transaction data recorded offline will sync with the online database as soon as a network connection is re-established.
       
 ## Table of Contents
 1. [Install Instructions](#install-instructions)
