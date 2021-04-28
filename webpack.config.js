@@ -3,7 +3,7 @@ const path = require("path");
 
 const config = {
   mode: "development",
-  entry: "/public/index.js",
+  entry: "./public/index.js",
   output: {
     path: __dirname + "/public/dist",
     filename: "[name].bundle.js"
@@ -11,8 +11,6 @@ const config = {
   plugins: [
     new WebpackPwaManifest({
       filename: "manifest.json",
-      inject: false,
-      fingerprints: false,
       name: "Budge-it Tracker App",
       short_name: "Budge-it App",
       description: "The best bang for the buck budget tracker application.",
@@ -24,7 +22,7 @@ const config = {
         {
           src: path.resolve("public/icons/icon_192x192.png"),
           sizes: [96, 128, 192, 256, 384, 512],
-          // destination: "/",
+          destination: path.join("assets", "icons")
         }
       ]
     })
